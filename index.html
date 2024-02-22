@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Sales Deal File Checklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Deal File Checklist</h1>
+    <button id="startOverBtn" class="start-over">Home</button>
+    <div id="dealTypeSection" class="section">
+        <h2>Deal Type</h2>
+        <button class="btn deal-type">Cash</button>
+        <button class="btn deal-type">Finance</button>
+    </div>
+    <div id="partExchangeSection" class="section hidden">
+        <h2>Part ex?</h2>
+        <button class="btn px-option">Yes</button>
+        <button class="btn px-option">No</button>
+    </div>
+    <div id="settlementSection" class="section hidden">
+        <h2>Is there a settlement?</h2>
+        <button class="btn settlement-option">Yes</button>
+        <button class="btn settlement-option">No</button>
+    </div>
+    <div id="documentListSection" class="section hidden">
+        <h2>Required Documents</h2>
+        <!-- Document buttons will be dynamically added here -->
+    </div>
+    <div id="finalCheckListSection" class="section hidden">
+        <h2>Final Checks</h2>
+        <!-- Final check buttons will be dynamically added here -->
+    </div>
+    <div id="progressBarContainer" class="hidden">
+        <div id="progressBar"></div>
+    </div>
+    
+    <!-- New Divider -->
+    <div class="divider"></div>
+    
+    <!-- Container for Final Checks -->
+    <div id="finalChecksSection" class="section hidden">
+        <h2>Final Checks</h2>
+        <!-- Final check buttons will be dynamically added here -->
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

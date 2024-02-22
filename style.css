@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section, #progressBarContainer {
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn, #startOverBtn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.clicked, #startOverBtn.clicked {
+    background-color: #28a745; /* Change color when clicked */
+}
+
+.start-over {
+    background-color: #dc3545;
+    margin-bottom: 20px;
+}
+
+#progressBarContainer {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#progressBar {
+    height: 20px;
+    width: 0%;
+    background-color: red; /* Initial color, will dynamically change based on progress */
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.divider {
+    height: 2px;
+    background-color: #ccc;
+    width: 80%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the divider with margin */
+}
+
+/* Existing styles for .btn.clicked modified for final check buttons */
+.btn.final-check.clicked {
+    background-color: gold; /* Change to gold when clicked */
+}
